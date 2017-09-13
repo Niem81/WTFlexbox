@@ -10,12 +10,12 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 
 .box {
   color: white;
-  font-size: 100px;
+  font-size: 20px;
   padding: 10px;
   text-align: center;
   text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.5);
-  /*width: 300px;*/
-  width: 33.3333333%;
+  /*width: 60px;*/
+  /*width: 33.3333333%;*/
   /*margin: 10px;*/
 }
 
@@ -30,23 +30,16 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 .box9 { background: #2ecc71 }
 .box10 { background: #16a085 }
 
+/*justify content says how are the item align in the main axis*/
+/* to remember the main axis is from left to right */
+/* cross axis is from top to bottom */
 .container {
   display: flex;
-  /*border: 5px solid goldenrod;
+  justify-content: space-between;
+  border: 10px solid mistyrose;
+  flex-direction: column;
   min-height: 100vh;
-  flex-direction: row;
-  flex-wrap: wrap;*/
 }
 
-.box {
-  flex: 1;
-  order: 1;
-}
-
-.box3 {
-  order: 3;
-}
-
-.box7 {
-  order: -2;
-}
+/* when you use flex-direction to column , the space between elemntes is gone*/
+/* to see changes is better to set a determine height */
